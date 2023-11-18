@@ -1,0 +1,2 @@
+To build docket image: docker build -t my_python_app .
+To run the code: docker run my_python_app
