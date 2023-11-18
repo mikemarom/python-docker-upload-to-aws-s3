@@ -36,7 +36,7 @@ except Exception as e:
 # Finally, cleanup your container - delete the file that was uploaded
 try:
     s3.delete_object(Bucket=bucket_name,Key=file_name)
-    print(f"{file_name} downloaded deleted from {bucket_name}")
+    print(f"{file_name} deleted successfully from {bucket_name}")
 except FileNotFoundError:
     print(f"The file {file_name} was not found.")
 except Exception as e:
